@@ -1,2 +1,2 @@
 # ProgrammingPractice
-A collection of classing data structure and algorithm problems.
+A collection of classic data structure and algorithm problems.
