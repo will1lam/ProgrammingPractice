@@ -13,32 +13,32 @@ class Solution:
             elif char == 'V':
                 # If 'I' was previous value,
                 # add 3 (1 + 3 = 4), otherwise add 5.
-                if (s[index - 1] == 'I'):
+                if (s[index - 1] == 'I') and index > 0:
                     intTotal += 3
                 else:
                     intTotal += 5
             elif char == 'X':
-                if (s[index - 1] == 'I'):
+                if (s[index - 1] == 'I') and index > 0:
                     intTotal += 8
                 else:
                     intTotal += 10
             elif char == 'L':
-                if (s[index - 1] == 'X'):
+                if (s[index - 1] == 'X') and index > 0:
                     intTotal += 30
                 else:
                     intTotal += 50
             elif char == 'C':
-                if (s[index - 1] == 'X'):
+                if (s[index - 1] == 'X') and index > 0:
                     intTotal += 80
                 else:
                     intTotal += 100  
             elif char == 'D':
-                if (s[index - 1] == 'C'):
+                if (s[index - 1] == 'C') and index > 0:
                     intTotal += 300
                 else:
                     intTotal += 500
             elif char == 'M':
-                if (s[index - 1] == 'C'):
+                if (s[index - 1] == 'C') and index > 0:
                     intTotal += 800
                 else:
                     intTotal += 1000
