@@ -2,7 +2,7 @@
 # This one might seem intimidating at first, but it's really linear when you take a step back. Since we are converting Roman Numerals to base ten decimal,
 # we only need to be concerned with our current value's translation, which also depends on the previous value. This means that something like "I" will
 # always increment 1, but placed before a "V", then we see it adjusting the "V"s increment from 5 to 3 to sum to 4 overall for "IV" == 4. Pretty fun overall.
-# It looks like a lot of conditionals, but once you see the pattern it becomes very clear.
+# I will be revisiting this, maybe using a dictionary to avoid so many conditionals.
 
 class Solution:
     def romanToInt(self, s: str) -> int:
